@@ -1,7 +1,7 @@
 # Clúster con Vagrant y Ansible
 ## Clúster compuesto por tres máquinas virtuales (2 webserver y 1 nameserver)
 
-Partir de la instalación previa de VirtualBox, vagrant(Version=2.2.9) y ansible(version=2.9.9).
+Partir de la instalación previa de VirtualBox, Vagrant(version=2.2.9) y Ansible(version=2.9.9).
 
 El escenario con las tres máquinas es el siguiente:
 
