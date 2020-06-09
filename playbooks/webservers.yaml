@@ -1,0 +1,21 @@
+---
+- name: Nginx installation
+  hosts: webservers
+  become: True
+  tasks:
+  - name: Ensure nginx is installed
+    apt: pkg=nginx
+
+  - name: Set index.html with hostname
+    template: >
+      src=templates/var/www/index.j2
+      dest=/usr/share/nginx/html/index.html
+      mode=644
+      owner=www-data
+      group=www-data
+    notify:
+      - restart nginx
+
+  handlers:
+    - name: restart nginx
+      service: name=nginx state=restarted
