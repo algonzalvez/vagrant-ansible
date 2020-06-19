@@ -9,6 +9,20 @@ El escenario con las tres máquinas es el siguiente:
 * nodo1: 192.168.10.101 <- Servidor web (nginx)
 * nodo2: 192.168.10.102 <- Servidor web (nginx)
 
+## Clonar el repositorio
+
+```
+$ git clone https://github.com/algonzalvez/vagrant-ansible.git
+```
+
+Se crea una carpeta con los archivos necesarios para el proyecto.
+
+## Acceder al directorio raíz
+
+```
+$ cd vagrant-ansible/
+```
+
 
 ## Desplegar el escenario
 
